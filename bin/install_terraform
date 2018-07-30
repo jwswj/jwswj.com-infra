@@ -1,0 +1,15 @@
+#!/bin/bash
+
+readonly TERRAFORM_VERSION="0.11.7"
+readonly INSTALL_DIR="/usr/local/bin"
+readonly DOWNLOAD_DIR="/tmp"
+readonly DOWNLOAD_URL="https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip"
+readonly DOWNLOADED_FILE="$DOWNLOAD_DIR/terraform.zip"
+
+echo "Downloading Terraform zip'd binary"
+curl -o "$DOWNLOADED_FILE" "$DOWNLOAD_URL"
+
+echo "Extracting Terraform executable"
+unzip "$DOWNLOADED_FILE" -d "$INSTALL_DIR"
+
+rm "$DOWNLOADED_FILE"
