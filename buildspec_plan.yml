@@ -4,6 +4,7 @@ phases:
     commands:
       - chmod a+x bin/install_terraform
       - bin/install_terraform
+      - terraform init
   build:
     commands:
       - terraform plan
