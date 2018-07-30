@@ -9,4 +9,6 @@ variable "domain_name" {
   default = "jwswj.com"
 }
 
-variable "website_bucket_name" {}
+variable "website_bucket_name" {
+  default = "jwswj.com"
+}
