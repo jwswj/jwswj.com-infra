@@ -2,7 +2,8 @@ version: 0.2
 phases:
   install:
     commands:
-      - bin/install_terraform 
+      - chmod a+x bin/install_terraform
+      - bin/install_terraform
   build:
     commands:
       - terraform apply
