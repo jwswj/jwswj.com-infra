@@ -1,16 +1,31 @@
-The repo contains the infrastructure for jwswj.com
+# Infrastructure for jwswj.com
 
-# Setup
+## Overview
+
+Terraform managing Cloudflare and AWS.
+
+Static files in a S3 bucket behind Cloudflare.
+
+Deployment of infrastructure managed by AWS CodePipeline and CodeBuild.
+
+## Local Setup
 
 1. Install terraform `brew install terraform`
 2. Setup AWS configuration (`~/.aws/configuration`) to have a `jwswj` profile
-3. Create `terraform.tfvars` that contains variables for authenticating against Cloudflare and other variables not checked in to version control
+3. Create `terraform.tfvars` that contains 2 variables for authenticating against Cloudflare
 
-# Running
+## Running
 
 1. `terraform plan`
 2. `terraform apply`
 
-# Details
+## Things I'll never remember
 
-Terraform state is stored in a private S3 bucket: `jwswj.com.terraform.state`
+Terraform state is stored in a private S3 bucket: `jwswj.com.terraform.state`.
+It's configured via code, rather than via a command that many people seem to use.
+
+There is no staging environment, only dev & production.
+
+## Todo
+
+- [ ] Convert CodePipeline and CodeBuild configuration to Terraform
