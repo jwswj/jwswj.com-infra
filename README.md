@@ -26,6 +26,10 @@ It's configured via code, rather than via a command that many people seem to use
 
 There is no staging environment, only dev & production.
 
+There is a manual approval step in the pipeline. The pipeline runs
+`terraform plan` then waits for a manual approval before running
+`terraform apply`. Terraform is downloaded for each phase.
+
 ## Todo
 
 - [ ] Convert CodePipeline and CodeBuild configuration to Terraform
