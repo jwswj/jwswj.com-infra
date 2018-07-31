@@ -33,3 +33,4 @@ There is a manual approval step in the pipeline. The pipeline runs
 ## Todo
 
 - [ ] Convert CodePipeline and CodeBuild configuration to Terraform
+- [ ] Setup SES to email me for the manual approval stage of the Pipeline
