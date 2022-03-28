@@ -1,5 +1,7 @@
 # Infrastructure for jwswj.com
 
+** This is no longer need as I moved to Cloudflare Pages **
+
 ## Overview
 
 Terraform managing Cloudflare and AWS.
