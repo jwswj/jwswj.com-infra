@@ -1,6 +1,6 @@
 # Infrastructure for jwswj.com
 
-** This is no longer need as I moved to Cloudflare Pages **
+**This is no longer need as I moved to Cloudflare Pages**
 
 ## Overview
 
